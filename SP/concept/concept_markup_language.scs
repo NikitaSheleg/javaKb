@@ -1,0 +1,37 @@
+
+sc_node_not_relation ->concept_markup_language;;
+
+
+
+
+//identificatori
+concept_markup_language=> nrel_main_idtf: [язык разметки](*<- lang_ru;;*);;
+concept_markup_language=> nrel_main_idtf: [markup language](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_markup_language;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Язы́к разме́тки (текста) в компьютерной терминологии — набор символов или последовательностей, вставляемых в текст для передачи информации о его выводе или строении.](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (язык разметки)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_markup_language;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Текстовый документ, написанный с использованием языка разметки, содержит не только сам текст (как последовательность слов и знаков препинания), но и дополнительную информацию о различных его участках — например, указание на заголовки, выделения, списки и т. д.](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(язык разметки)](*<- lang_ru;;*);;
+*);;
+
+
+

@@ -1,0 +1,47 @@
+
+
+sc_node_not_relation ->concept_computer_science;;
+
+
+
+
+
+//identificatori
+concept_computer_science=> nrel_main_idtf: [информатика](*<- lang_ru;;*);;
+concept_computer_science=> nrel_main_idtf: [computer science](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_computer_science;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[информатика - наука, изучающая структуру, общие свойства и методы передачи информации, в том числе связанной с применением <b><sc_element sys_idtf="concept_electronic_computer">ЭВМ</b></sc_element>  ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (информатика)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_electronic_computer
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_computer_science;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Информатика включает дисциплины, относящиеся к обработке информации в вычислительных машинах и вычислительных сетях: как абстрактные, вроде анализа алгоритмов, так и конкретные, например разработка <b><sc_element sys_idtf="concept_programming_language">языков программирования</b></sc_element> и протоколов передачи данных. ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(информатика)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{ 
+    concept_electronic_computer;
+    concept_programming_language
+};;
+*);;
+
+

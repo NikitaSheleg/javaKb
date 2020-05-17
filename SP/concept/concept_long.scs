@@ -1,0 +1,47 @@
+
+
+sc_node_not_relation ->concept_long;;
+
+
+
+
+
+//identificatori
+concept_long=> nrel_main_idtf: [long](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_long;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[long- подмножество множества <b><sc_element sys_idtf="concept_primirive_data_type">примитивных типов данных</b></sc_element> в пределах от  -9223372036854775808 до 9223372036854775807  ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (long)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_primirive_data_type
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_long;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[для создания переменной типа long используется <b><sc_element sys_idtf="concept_key_word_for_primitive_type">ключевое слово для создания примитивных типов</b></sc_element> long](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(long)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_variable;
+       concept_key_word_for_primitive_type
+   };;
+
+*);;
+
+

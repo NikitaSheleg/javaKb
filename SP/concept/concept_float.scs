@@ -1,0 +1,47 @@
+
+
+sc_node_not_relation ->concept_float;;
+
+
+
+
+
+//identificatori
+concept_float=> nrel_main_idtf: [float](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_float;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[float- подмножество множества <b><sc_element sys_idtf="concept_floating_data_type">числа с плавающей точкой</b></sc_element> , от -3.4*10^38 до 3.4*10^38](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (float)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_floating_point_data_type
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_char;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[для создания переменной типа float используется <b><sc_element sys_idtf="concept_key_word_for_primitive_type">ключевое слово для создания примитивных типов</b></sc_element> float](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(float)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_variable;
+       concept_key_word_for_primitive_type
+   };;
+
+*);;
+
+

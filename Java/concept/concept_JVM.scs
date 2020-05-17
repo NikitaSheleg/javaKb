@@ -1,0 +1,50 @@
+
+
+sc_node_not_relation ->concept_JVM;;
+
+
+
+
+
+//identificatori
+concept_JVM=> nrel_main_idtf: [Java Virtual Mashine](*<- lang_en;;*);;
+concept_JVM=> nrel_main_idtf: [виртуальная машина джава](*<- lang_ru;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_JVM;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[JVM- основная часть исполняющей системы java](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (виртуальная машина джава)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+      
+      java
+       
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_JVM;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[виртуальная машина джава исполняет байт-код джава, предварительно созданный из исходного текста программы на джава  <b><sc_element sys_idtf="concept_compiler">компилятором</b></sc_element>](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(виртуальная машина джава)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       java;
+       concept_compiler
+   };;
+
+*);;
+
+

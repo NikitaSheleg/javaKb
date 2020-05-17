@@ -1,0 +1,87 @@
+sc_node_not_relation ->concept_class;;
+sc_node_not_relation ->concept_variable;;
+sc_node_not_relation ->concept_object;;
+sc_node_not_relation ->concept_key_word;;
+sc_node_not_relation ->concept_code_block;;
+
+sc_node_norole_relation ->nrel_stub;;
+sc_node_norole_relation->nrel_field;;
+
+
+//identificatori
+nrel_stub=> nrel_main_idtf: [заглушка* ](*<- lang_ru;;*);;
+nrel_stub=> nrel_main_idtf: [stub* ](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:nrel_stub;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[заглушка это фрагмент кода, устанавливающий связь между апплетом и браузером ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (заглушка*)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+{
+concept_code_block;
+concept_browser;
+concept_applet
+};;
+*);;
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:nrel_stub;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[в джава в классе Applet описана функция setStub, которая делает передаваемый параметр объектом заглушки ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(заглушка*)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{ concept_class;
+nrel_function;
+nrel_parameter
+};;
+*);;
+
+
+
+//domains
+nrel_stub
+=>nrel_first_domain:concept_code_block;
+=>nrel_second_domain:concept_applet;
+=>nrel_definitional_domain: ...(*
+    <=nrel_combination:
+    {
+       concept_code_block;
+        concept_applet
+    };;
+*);;
+
+
+//otnosheniya
+relation                    => nrel_inclusion: oriented_relation;; 
+relation                    => nrel_inclusion: norole_relation;;
+oriented_relation           -> nrel_stub;;
+norole_relation             ->nrel_stub;;
+binary_relation             => nrel_inclusion: antireflexive_relation;;
+binary_relation             => nrel_inclusion: transitive_relation;;
+
+binary_relation             => nrel_inclusion: asymetric_relation;;
+
+//binary_relation => nrel_inclusion: antisymmetric_relation;; 
+antireflexive_relation          -> nrel_stub;; 
+transitive_relation         -|> nrel_stub;;
+asymetric_relation          ->nrel_stub;;
+//symmetric_relation -> nrel_processor_speed;;
+
+
+
+//arnost
+arity                       -> ..concept_arity_1;;
+..concept_arity_1           ->nrel_stub;;
+..concept_arity_1           =>nrel_measurement:2;;
+number                      ->2;;
+
+
+
+//primer
+concept_code_block ->..code;;
+concept_applet ->..applet;;
+..applet=>nrel_stub:..code;;

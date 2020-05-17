@@ -1,0 +1,47 @@
+
+
+sc_node_not_relation ->concept_char;;
+
+
+
+
+
+//identificatori
+concept_char=> nrel_main_idtf: [char](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_char;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[char- подмножество множества <b><sc_element sys_idtf="concept_character_data_type">символьных типов данных</b></sc_element> ,беззнаковое <b><sc_element sys_idtf="integer"> целое число</b></sc_element>, представляющее собой символ UTF-16 (буквы и цифры)](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (char)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_character_data_type
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_char;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[для создания переменной типа char используется <b><sc_element sys_idtf="concept_key_word_for_primitive_type">ключевое слово для создания примитивных типов</b></sc_element> char](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(char)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_variable;
+       concept_key_word_for_primitive_type
+   };;
+
+*);;
+
+

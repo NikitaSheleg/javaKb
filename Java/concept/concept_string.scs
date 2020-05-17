@@ -1,0 +1,51 @@
+
+
+sc_node_not_relation ->concept_string;;
+
+
+
+
+
+//identificatori
+concept_string=> nrel_main_idtf: [string](*<- lang_en;;*);;
+concept_string=> nrel_main_idtf: [строка](*<- lang_ru;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_string;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[string- класс, подмножество множества <b><sc_element sys_idtf="concept_reference_type">ссылочныхтипов данных</b></sc_element> ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (строка)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_reference_type;
+       concept_class
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_string;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[строки в <b><sc_element sys_idtf="java">Java</b></sc_element>  являются неизменяемыми, поэтому при изменении строки в<b><sc_element sys_idtf="concept_heap"> heap</b></sc_element> создаётся новый объект](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(строка)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_object;
+       concept_heap;
+       java
+
+   };;
+
+*);;
+
+

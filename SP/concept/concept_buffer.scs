@@ -1,0 +1,49 @@
+
+
+sc_node_not_relation ->concept_buffer;;
+
+
+
+
+
+//identificatori
+concept_buffer=> nrel_main_idtf: [buffer](*<- lang_en;;*);;
+concept_buffer=> nrel_main_idtf: [буфер](*<- lang_ru;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_buffer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[буфер - небольшая область памяти, выделяемая для хранения символов перед тем, как они будут прочитаны <b><sc_element sys_idtf="program">программой</b></sc_element>](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (буфер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_memory;
+       concept_character_data_type;
+       program
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_buffer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[<b><sc_element sys_idtf="concept_data">данные</b></sc_element>, хранимые в буфере не видны пользователю](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(буфер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_data
+   };;
+
+*);;
+
+

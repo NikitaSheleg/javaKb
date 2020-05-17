@@ -1,0 +1,61 @@
+
+sc_node_not_relation ->concept_bit;;
+sc_node_not_relation ->concept_computer_science;;
+sc_node_not_relation ->concept_byte;;
+
+
+
+
+//identificatori
+concept_bit=> nrel_main_idtf: [бит](*<- lang_ru;;*);;
+concept_bit=> nrel_main_idtf: [bit](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_bit;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[биты-<b><sc_element sys_idtf="nrel_measure">единица измерения</b></sc_element>  количества информации ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (бит)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       nrel_measure
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_bit;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ В информатике принято рассматривать последовательности длиной 8 бит. Такая последовательность называется байтом. С помощью одного байта можно записать двоичные коды 256 (28) чисел от 0 до 255.](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(бит)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{ 
+    concept_computer_science;
+    concept_byte;
+    concept_binary_code
+};;
+*);;
+
+concept_bit <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[единицы информации] (* <- lang_ru;; *);;
+=>nrel_main_idtf:
+[information_units](* <- lang_en;; *);;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://pics/units.png"(*=>nrel_format:format_png;;*);;
+*);;
+
+*);;
+

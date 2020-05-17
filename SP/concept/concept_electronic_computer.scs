@@ -1,0 +1,51 @@
+
+sc_node_not_relation -> concept_electronic_computer;;
+sc_node_not_relation -> concept_technical_resources;;
+sc_node_not_relation -> concept_hardware_resources;;
+sc_node_not_relation -> concept_program_hardware;;
+
+
+
+
+
+//identificatori
+concept_electronic_computer=> nrel_main_idtf: [электронно-вычислительная машина](*<- lang_ru;;*);;
+concept_electronic_computer=> nrel_main_idtf: [electronic computer](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_electronic_computer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[электронно-вычислительная машина - комплекс технических, аппаратных и программных средств, предназначенных для автоматической обработки информации, вычислений, автоматического управления.](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (электронно-вычислительная машина)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+      concept_technical_resources;
+      concept_hardware_resources;
+      concept_program_hardware
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_electronic_computer;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[в отличие от <b><sc_element sys_idtf="concept_computer">компьютера</b></sc_element>, ЭВМ подразумевает использование электронных компонентов в качестве её функциональных узлов, однако вычислитель может быть устроен и на других принципах — вычисления могут быть произведены механическим, биологическим, оптическим, квантовым и другими способами, работая за счёт перемещения механических частей, движения электронов, фотонов или за счёт других физических явлений.](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(электронно-вычислительная машина)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{ 
+concept_computer
+};;
+*);;
+
+
+

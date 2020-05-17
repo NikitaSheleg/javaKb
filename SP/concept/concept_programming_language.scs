@@ -1,0 +1,51 @@
+
+sc_node_not_relation ->concept_programming_language;;
+sc_node_not_relation ->concept_formal_language;;
+
+
+
+
+//identificatori
+concept_programming_language=> nrel_main_idtf: [язык программирования](*<- lang_ru;;*);;
+concept_programming_language=> nrel_main_idtf: [programming language](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_programming_language;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[язык программирования - формальный язык, предназначенный для записи <b><sc_element sys_idtf="program">компьютерных программ</b></sc_element> ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (язык программирования)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       program;
+       concept_formal_language
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_programming_language;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Язык программирования определяет набор лексических, синтаксических и семантических правил, определяющих внешний вид программы и действия, которые выполнит исполнитель (обычно — ЭВМ) под её управлением.](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(язык программирования)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{ 
+program;
+concept_lexical_rules;
+concept_syntax_rules;
+concept_semantic_rules;
+concept_electronic_computer
+};;
+*);;
+
+
+

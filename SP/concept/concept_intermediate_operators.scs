@@ -1,0 +1,42 @@
+
+
+sc_node_not_relation ->concept_intermediate_operators;;
+
+
+
+
+
+//identificatori
+concept_terminal_operators=> nrel_main_idtf: [промежуточные операторы](*<- lang_ru;;*);;
+concept_terminal_operators=> nrel_main_idtf: [intermediate operators](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_intermediate_operators;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Промежуточные (“intermediate”, ещё называют “lazy”) — обрабатывают поступающие элементы и возвращают <b><sc_element sys_idtf="concept_thread">поток</b></sc_element>  ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (промежуточные операторы)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_thread
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_intermediate_operators;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[Промежуточных операторов в цепочке обработки элементов может быть много](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(промежуточные операторы)](*<- lang_ru;;*);;
+*);;
+
+

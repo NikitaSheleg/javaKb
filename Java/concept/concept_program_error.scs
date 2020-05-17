@@ -1,0 +1,45 @@
+sc_node_not_relation ->concept_code;;
+sc_node_not_relation ->concept_development_kit;;
+sc_node_not_relation ->concept_program_error;;
+sc_node_not_relation ->concept_mistake;;
+
+sc_node_norole_relation ->nrel_execution_result;;
+
+
+
+//identificatori
+concept_program_error=> nrel_main_idtf: [программная ошибка](*<- lang_ru;;*);;
+concept_program_error=> nrel_main_idtf: [program error](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_program_error;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[программная ошибка -означает ошибку в программе или в системе, из-за которой программа выдает неожиданное поведение и, как следствие, результат. ](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Определение (программная ошибка)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+  concept_mistake;
+  program;
+  nrel_execution_result
+  };;
+*);;
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_program_error;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[некоторые ошибки возникают из-за некорректной работы инструментов разработчика, например из-за компилятора, вырабатывающего некорректный код.](*<-lang_ru;;*);;*);;
+=> nrel_main_idtf: [Утверждение(программная ошибка)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{ 
+concept_mistake;
+concept_development_kit;
+concept_compiler;
+concept_code
+};;
+*);;
+
+
+

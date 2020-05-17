@@ -1,0 +1,48 @@
+
+
+sc_node_not_relation ->concept_browser;;
+sc_node_not_relation -> concept_web_site;;
+
+
+
+
+//identificatori
+concept_browser=> nrel_main_idtf: [browser](*<- lang_en;;*);;
+concept_browser=> nrel_main_idtf: [браузер](*<- lang_ru;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_browser;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[браузер - <b><sc_element sys_idtf="program">программа</b></sc_element> для поиска и просмотра на экране <b><sc_element sys_idtf="concept_computer">компьютера</b></sc_element> информации](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (браузер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_computer;
+       program
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_browser;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[в глобальной сети браузеры используют для запроса, обработки, манипулирования и отображения содержимого веб-сайтов](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(браузер)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_web_site
+   };;
+
+*);;
+
+

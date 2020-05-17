@@ -1,0 +1,51 @@
+sc_node_not_relation ->concept_shift_operators;;
+sc_node_not_relation ->concept_bits;;
+sc_node_not_relation ->concept_operand;;
+sc_node_not_relation ->concept_operator;;
+
+
+
+
+//identificatori
+concept_shift_operators=> nrel_main_idtf: [операторы сдвига](*<- lang_ru;;*);;
+concept_shift_operators=> nrel_main_idtf: [shift operators](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_shift_operators;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[операторы сдвига - Эти операторы заставляют <b><sc_element sys_idtf="concept_bit">биты</b></sc_element>  левого операнда сдвинуться влево или вправо на то количество позиций, которое указано во втором операнде.. ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (операторы сдвига)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_operator;
+       concept_operand;
+       concept_bit 
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_shift_operators;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[ В Java есть операторы сдвига. Операторы << и >> позаимствованы из <b><sc_element sys_idtf="concept_c_plus_plus">C++</b></sc_element> . Кроме того, Java обладает своим новым оператором сдвига >>>..](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(операторы сдвига)](*<- lang_ru;;*);;
+=> nrel_using_constants: 
+{ 
+    java;
+ concept_c_plus_plus;
+concept_operator
+};;
+*);;
+
+
+

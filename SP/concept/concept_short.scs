@@ -1,0 +1,47 @@
+
+
+sc_node_not_relation ->concept_short;;
+
+
+
+
+
+//identificatori
+concept_short=> nrel_main_idtf: [short](*<- lang_en;;*);;
+
+//opredelenie
+definition ->...
+(*
+->rrel_key_sc_element:concept_short;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[short- подмножество множества <b><sc_element sys_idtf="concept_primirive_data_type">примитивных типов данных</b></sc_element> в пределах от -32768 до 32767 ](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Определение (short)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_primirive_data_type
+   };;
+
+*);;
+
+
+
+//utverjdenie
+statement ->...
+(*
+->rrel_key_sc_element:concept_short;;
+<= nrel_sc_text_translation: ...(*->rrel_example:[для создания переменной типа short используется <b><sc_element sys_idtf="concept_key_word_for_primitive_type">ключевое слово для создания примитивных типов</b></sc_element> short](*<-lang_ru;;
+=>nrel_format:format_html;;
+*);;
+*);;
+=> nrel_main_idtf: [Утверждение(short)](*<- lang_ru;;*);;
+=> nrel_using_constants:
+   {
+       concept_variable;
+       concept_key_word_for_primitive_type
+   };;
+
+*);;
+
+

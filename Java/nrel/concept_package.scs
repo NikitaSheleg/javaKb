@@ -1,4 +1,4 @@
-sc_node_not_relation ->concept_package;;
+esc_node_not_relation ->concept_package;;
 sc_node_not_relation ->concept_namespace;;
 sc_node_not_relation -> concept_class;;
 sc_node_not_relation -> concept_mechanism;;
@@ -6,16 +6,17 @@ sc_node_not_relation -> concept_jar_file;;
 
 
 sc_node_norole_relation->nrel_compressed_package;;
+sc_node_norole_relation -> nrel_import;;
 
 
 //identificatori
-nrel_import=> nrel_main_idtf: [пакет ](*<- lang_ru;;*);;
-nrel_import=> nrel_main_idtf: [package ](*<- lang_en;;*);;
+concept_package=> nrel_main_idtf: [пакет ](*<- lang_ru;;*);;
+concept_package=> nrel_main_idtf: [package ](*<- lang_en;;*);;
 
 //opredelenie
 definition ->...
 (*
-->rrel_key_sc_element:nrel_import;;
+->rrel_key_sc_element:concept_package;;
 <= nrel_sc_text_translation: ...(*->rrel_example:[пакет - <b><sc_element sys_idtf="concept_mechanism">механизм</b></sc_element> , позволяющий организовать Java классы в пространстве имен . ](*<-lang_ru;;
 =>nrel_format:format_html;; 
 *);;*);;
@@ -32,7 +33,7 @@ definition ->...
 //utverjdenie
 statement ->...
 (*
-->rrel_key_sc_element:nrel_import;;
+->rrel_key_sc_element:concept_package;;
 <= nrel_sc_text_translation: ...(*->rrel_example:[Java пакеты могут содержаться в сжатом виде в <b><sc_element sys_idtf="concept_jar_file">JAR файлах</b></sc_element>.](*<-lang_ru;;
 =>nrel_format:format_html;; 
 *);;*);;

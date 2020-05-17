@@ -6,20 +6,24 @@ subject_domain_of_java_language
 -> rrel_maximum_studied_object_class: java;
 
 -> rrel_not_maximum_studied_object_class:
-		concept_stack;
-		concept_java_annotation;
 		concept_interface;
 		concept_heap;
-		concept_string_pull;
 		concept_optional_value;
 		concept_handler;
-		concept_jar_file;
-		concept_listener;
-		concept_transaction;
-		concept_instance;
-		concept_anonymous_class;
-		concept_data_type;
-		concept_container;
+		concept_applet;
+		concept_string;
+		concept_predicate;
+		concept_interface;
+		concept_functional_interface;
+		concept_java_thread;
+		concept_browser;
+		concept_enum;
+		concept_jvm;
+		concept_package;
+		nrel_case_convertion;
+		nrel_import;
+		nrel_implementation;
+		nrel_stub;
 		concept_collection;;
 
 

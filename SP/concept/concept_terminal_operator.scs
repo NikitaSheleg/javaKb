@@ -1,24 +1,24 @@
 
 
-sc_node_not_relation ->concept_terminal_operators;;
+sc_node_not_relation ->concept_terminal_operator;;
 
 
 
 
 
 //identificatori
-concept_terminal_operators=> nrel_main_idtf: [терминальные операторы](*<- lang_ru;;*);;
-concept_terminal_operators=> nrel_main_idtf: [terminal operators](*<- lang_en;;*);;
+concept_terminal_operator=> nrel_main_idtf: [терминальный оператор](*<- lang_ru;;*);;
+concept_terminal_operator=> nrel_main_idtf: [terminal operator](*<- lang_en;;*);;
 
 //opredelenie
 definition ->...
 (*
-->rrel_key_sc_element:concept_terminal_operators;;
+->rrel_key_sc_element:concept_terminal_operator;;
 <= nrel_sc_text_translation: ...(*->rrel_example:[Терминальные (“terminal”, ещё называют “eager”) операторы — обрабатывают элементы и завершают работу <b><sc_element sys_idtf="concept_thread">потока</b></sc_element>  ](*<-lang_ru;;
 =>nrel_format:format_html;;
 *);;
 *);;
-=> nrel_main_idtf: [Определение (терминальные операторы)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [Определение (терминальный оператор)](*<- lang_ru;;*);;
 => nrel_using_constants:
    {
        concept_thread
@@ -31,12 +31,12 @@ definition ->...
 //utverjdenie
 statement ->...
 (*
-->rrel_key_sc_element:concept_terminal_operators;;
+->rrel_key_sc_element:concept_terminal_operator;;
 <= nrel_sc_text_translation: ...(*->rrel_example:[терминальный оператор может быть только один](*<-lang_ru;;
 =>nrel_format:format_html;;
 *);;
 *);;
-=> nrel_main_idtf: [Утверждение(терминальные операторы)](*<- lang_ru;;*);;
+=> nrel_main_idtf: [Утверждение(терминальный оператор)](*<- lang_ru;;*);;
 => nrel_using_constants: 
 { 
    concept_operator

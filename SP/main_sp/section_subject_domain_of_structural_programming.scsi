@@ -6,5 +6,28 @@ subject_domain_of_structural_programming
 -> rrel_maximum_studied_object_class: structural_programming;
 
 -> rrel_not_maximum_studied_object_class:
-		concept_compiler;;
+		concept_character_type;
+		concept_bit;
+		concept_buffer;
+		concept_char;
+		concept_double;
+		concept_float;
+		concept_long;
+		concept_short;
+		concept_computer_science;
+		concept_data;
+		concept_electronic_computer;
+		concept_intermediate_operator;
+		concept_markup_language;
+		concept_program_code;
+		concept_programming_language;
+		concept_shift_operator;
+		concept_terminal_operator;
+		concept_transaction;
+		concept_control_statements;
+		concept_key_word_for_primitive_type;
+		concept_primirive_data_type;;
+
+
+
 

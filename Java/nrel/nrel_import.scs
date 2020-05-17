@@ -7,8 +7,8 @@ sc_node_norole_relation->nrel_method;;
 
 
 //identificatori
-nrel_import=> nrel_main_idtf: [имплементация* ](*<- lang_ru;;*);;
-nrel_import=> nrel_main_idtf: [implementation* ](*<- lang_en;;*);;
+nrel_import=> nrel_main_idtf: [импорт* ](*<- lang_ru;;*);;
+nrel_import=> nrel_main_idtf: [import* ](*<- lang_en;;*);;
 
 //opredelenie
 definition ->...

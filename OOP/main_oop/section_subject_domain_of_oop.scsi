@@ -6,5 +6,14 @@ subject_domain_of_oop
 -> rrel_maximum_studied_object_class: oop;
 
 -> rrel_not_maximum_studied_object_class:
-		concept_compiler;;
+		concept_compiler;
+		concept_key_word_access_modifier;
+		nrel_constructor;
+		nrel_static_method;
+		nrel_subtype;
+		nrel_supertype;
+		nrel_static_initializer;
+		nrel_static_field;
+		nrel_static_method;;
+
 

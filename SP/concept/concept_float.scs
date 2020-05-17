@@ -30,7 +30,7 @@ definition ->...
 //utverjdenie
 statement ->...
 (*
-->rrel_key_sc_element:concept_char;;
+->rrel_key_sc_element:concept_float;;
 <= nrel_sc_text_translation: ...(*->rrel_example:[для создания переменной типа float используется <b><sc_element sys_idtf="concept_key_word_for_primitive_type">ключевое слово для создания примитивных типов</b></sc_element> float](*<-lang_ru;;
 =>nrel_format:format_html;;
 *);;

@@ -7,7 +7,7 @@ sc_node_not_relation ->concept_double;;
 
 
 //identificatori
-concept_float=> nrel_main_idtf: [double](*<- lang_en;;*);;
+concept_double=> nrel_main_idtf: [double](*<- lang_en;;*);;
 
 //opredelenie
 definition ->...
